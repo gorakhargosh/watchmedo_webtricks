@@ -1,0 +1,3 @@
+[submodule "vendor/watchdog"]
+	path = vendor/watchdog
+	url = git://github.com/gorakhargosh/watchdog.git
