@@ -57,7 +57,7 @@ setup(name="watchmedo_webtricks",
       license="MIT License",
       url="http://github.com/gorakhargosh/watchmedo-webtricks",
       download_url=\
-      "http://watchdog-python.googlecode.com/files/watchmedo-webtricks-%s.tar.gz"\
+      "http://watchdog-python.googlecode.com/files/watchmedo_webtricks-%s.tar.gz"\
       % version.VERSION_STRING,
       keywords=' '.join([
                             'python',
