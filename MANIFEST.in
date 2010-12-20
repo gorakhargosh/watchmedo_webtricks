@@ -1,4 +1,4 @@
 include README
 include LICENSE
 include AUTHORS
-recursive-include src *.py *.h *.c *.jar
+recursive-include src *.py *.jar
