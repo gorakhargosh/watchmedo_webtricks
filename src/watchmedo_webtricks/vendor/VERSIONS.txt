@@ -1,0 +1,2 @@
+yuicompressor.jar: 2.4.2
+
