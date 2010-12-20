@@ -28,13 +28,10 @@ import os.path
 from setuptools import setup, find_packages
 
 SRC_DIR = 'src'
-WEBTRICKS_PKG_DIR = os.path.join(SRC_DIR, 'watchdog_webtricks')
+PKG_DIR = os.path.join(SRC_DIR, 'watchmedo_webtricks')
 
 version = imp.load_source('version',
-                          os.path.join(WEBTRICKS_PKG_DIR, 'version.py'))
-DOWNLOAD_URL =\
-"http://watchdog-python.googlecode.com/files/watchdog-webtricks-%s.tar.gz"\
-% version.VERSION_STRING
+                          os.path.join(PKG_DIR, 'version.py'))
 
 def read_file(filename):
     """
@@ -51,15 +48,17 @@ if sys.version_info < (3,):
 else:
     extra = dict(use_2to3=True)
 
-setup(name="watchdog_webtricks",
+setup(name="watchmedo_webtricks",
       version=version.VERSION_STRING,
-      description="Watchdog WebTricks Collection",
+      description="Watchmedo WebTricks",
       long_description=read_file('README'),
       author="Gora Khargosh",
       author_email="gora.khargosh@gmail.com",
       license="MIT License",
-      url="http://github.com/gorakhargosh/watchdog-webtricks",
-      download_url=DOWNLOAD_URL,
+      url="http://github.com/gorakhargosh/watchmedo-webtricks",
+      download_url=\
+      "http://watchdog-python.googlecode.com/files/watchmedo-webtricks-%s.tar.gz"\
+      % version.VERSION_STRING,
       keywords=' '.join([
                             'python',
                             'filesystem',
@@ -89,7 +88,7 @@ setup(name="watchdog_webtricks",
       package_dir={'': SRC_DIR},
       packages=find_packages(SRC_DIR),
       include_package_data=True,
-      install_requires=[],
+      install_requires=['watchdog'],
       zip_safe=False,
       **extra
       )
