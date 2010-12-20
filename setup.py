@@ -55,7 +55,7 @@ setup(name="watchmedo_webtricks",
       author="Gora Khargosh",
       author_email="gora.khargosh@gmail.com",
       license="MIT License",
-      url="http://github.com/gorakhargosh/watchmedo-webtricks",
+      url="http://github.com/gorakhargosh/watchmedo_webtricks",
       download_url=\
       "http://watchdog-python.googlecode.com/files/watchmedo_webtricks-%s.tar.gz"\
       % version.VERSION_STRING,
